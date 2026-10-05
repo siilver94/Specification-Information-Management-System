@@ -1,0 +1,53 @@
+# ============================================================
+# SIMS .gitignore
+# ============================================================
+
+# ---------- 비밀 정보 (절대 커밋 금지) ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------- 사양 데이터 (대외비, 절대 커밋 금지) ----------
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.dump
+*.sql
+data/
+SIMS-Backend/**/import_files/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------- Django ----------
+*.log
+db.sqlite3
+staticfiles/
+media/
+
+# ---------- Node / Vue ----------
+node_modules/
+dist/
+npm-debug.log*
+yarn-error.log*
+
+# ---------- 에디터 / OS ----------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------- Claude Code 개인 설정 ----------
+CLAUDE.local.md
+.claude/settings.local.json
