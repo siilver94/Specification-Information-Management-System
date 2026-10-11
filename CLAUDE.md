@@ -147,3 +147,4 @@ docker compose up -d --build
 * **실제 사양 데이터(엑셀, CSV, DB 덤프)를 저장소에 커밋하지 않는다.** 사양 데이터는 대외비다. 실제 엑셀은 `data/`에 두고 `.gitignore`로 제외한다. 테스트에는 가짜 데이터를 쓴다.
 * 운영 설정: `DEBUG=False`, `ALLOWED_HOSTS`·`CSRF_TRUSTED_ORIGINS`는 환경 변수로 제한.
 * 엑셀 다운로드 기능은 다운로드 기록(누가·언제·무엇을)과 파일 내 다운로드자·일시·대외비 표기를 포함한다.
+* 
