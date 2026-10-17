@@ -9,15 +9,20 @@
 *.pem
 *.key
 
-# ---------- 사양 데이터 (대외비, 절대 커밋 금지) ----------
+# ---------- 사양 데이터 · 사내 문서 (대외비, 절대 커밋 금지) ----------
+data/
 *.xlsx
 *.xls
 *.xlsm
 *.csv
 *.dump
 *.sql
-data/
-SIMS-Backend/**/import_files/
+*.pptx
+*.ppt
+*.docx
+*.doc
+*.pdf
+BackEnd/**/import_files/
 
 # ---------- Python ----------
 __pycache__/
