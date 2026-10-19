@@ -5,11 +5,15 @@
 **/.env
 **/.env.*
 
-# 사양 데이터: 이미지에 포함 금지
+# 사양 데이터·사내 문서: 이미지에 포함 금지
+**/data
 **/*.xlsx
 **/*.xls
+**/*.xlsm
 **/*.csv
-**/data
+**/*.pptx
+**/*.docx
+**/*.pdf
 
 # Python 캐시·가상환경
 **/__pycache__
@@ -20,6 +24,7 @@
 # Django 생성물 (빌드·볼륨으로 따로 관리)
 **/staticfiles
 **/media
+**/db.sqlite3
 
 # Vue 라이브러리·빌드 결과물 (멀티스테이지 빌드에서 새로 생성)
 **/node_modules
@@ -28,4 +33,6 @@
 # 문서·에디터
 **/.vscode
 **/.idea
+docs/
 CLAUDE.md
+README.md
